@@ -25,7 +25,7 @@ $done = array();
 
 foreach ($tasks["results"] as $task)
 {
-    if ($task["properties"]["Done"]["checkbox"] == true)
+    if ($task["properties"]["Done"]["checkbox"] == true && $task["properties"]["Recurring Interval"]["number"] != NULL)
     {
         $done[] = $task;
     }
